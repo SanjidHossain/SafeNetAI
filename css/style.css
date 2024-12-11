@@ -1,0 +1,532 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(252, 252, 252);
+}
+
+.occ,
+.pb,
+.ed,
+.ab,
+.sk,
+.pro,
+.cg,
+.con {
+
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    color: rgb(8, 3, 3);
+
+}
+
+
+
+
+#aboutme{
+    color: rgb(252, 246, 255);
+}
+.skillbody{
+    color: rgb(252, 246, 255);
+}
+
+.skill{
+    color: rgb(252, 246, 255);
+}
+
+.sk_d{
+    color: rgb(247, 209, 238);
+}
+
+
+/* ......bannar ITEMS............. */
+
+/* .bannar_container {
+    background-color: rgb(169, 189, 206);
+}
+
+.banner_text {
+    background-color: rgb(53, 71, 87);
+}
+
+.banner_column {
+    background-color: rgb(146, 158, 150);
+    color: aliceblue;
+    text-align: center;
+
+} */
+
+.bannar_body {
+    background-color: lightgray;
+    height: 200px;
+}
+
+.typing,
+.typing-1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 510;
+    color: red;
+
+
+}
+
+.bannar_items {
+    width: 50%;
+    height: 60%;
+    margin: 50px;
+    margin-left: 25%;
+    background-color: #dde4eb;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+
+
+.about_part {
+    text-align: center;
+    margin: 10px;
+}
+
+.abme {
+    font-size: 30px;
+    font-weight: 510;
+}
+
+.wai {
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+}
+
+/* .................navbar items................... */
+
+.nav-item {
+    margin-right: 30px;
+
+}
+
+.nav-link {
+    color: rgba(189, 10, 10, 0.925);
+}
+
+.ml {
+
+    background-color: antiquewhite;
+    padding: 5px;
+
+
+}
+
+/* ......nav button........ */
+
+.ab,
+.ed,
+.sk,
+.pb,
+.occ,
+.pro,
+.cg,
+.con {
+    background-color: #064f94;
+    color: #dde4eb;
+    opacity: 0.8;
+}
+
+/* ................nav bar hover........................... */
+
+.abo:hover {
+    background-color: steelblue !important;
+
+    /* text-align: center; */
+    transition: 1s;
+    /* border: 2px solid steelblue; */
+    color: #fff2fe;
+    /* font-size: larger; */
+    /* font-weight: bolder; */
+
+
+}
+
+/*
+.occ:hover {
+    background-color: steelblue !important;
+    height: 78px;
+    width: 200px;
+    text-align: center;
+    padding-top: 5px;
+    transition: 1s;
+
+    color: #dae1e7;
+    font-size: larger;
+    font-weight: bolder;
+
+
+} */
+
+/* ........................................................... */
+
+
+.espam_header {
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: rgb(108, 108, 151); */
+    color: rgba(11, 59, 134, 0.829);
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.site {
+    margin-left: 100px;
+    width: 100px;
+
+}
+
+
+
+/* ...........About section................ */
+
+.aboutdetails_text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.abname {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* education section design */
+
+
+
+
+.education-container {
+    background-color: rgb(235, 240, 240);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.edu_title {
+    text-align: center;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: red;
+
+}
+
+.edu_icon {
+    margin-left: 10px;
+    margin-top: 50px;
+    width: 100px;
+    align-items: center;
+}
+
+.edu_details {
+    background-color: #ccc;
+    width: 95%;
+    height: 90%;
+    margin-top: 0px;
+    margin-left: 90px;
+    border-radius: 6px;
+    padding: 35px;
+
+}
+
+.edu_date {
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.Degree {
+    font-size: large;
+    font-weight: 550;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-style: italic;
+}
+
+.UV{
+    font-size: larger;
+    font-weight: 650;
+    margin-top: 5px;
+    margin-bottom: 3px;
+   
+}
+
+.result {
+    margin-bottom: 3px;
+    font-weight: 400;
+    font-style: oblique;
+}
+
+.thesis_title {
+    font-weight: 510;
+    font-style: italic;
+}
+
+/* SKILLS SECTION */
+.sktext {
+    font-size: 15px;
+    font-size: large;
+    font-weight: bold;
+
+
+}
+
+.skillheader_text {
+    padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.skillheadr_body {
+
+    background-color: #6d98c0;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.skillbody {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+.skills {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 10px;
+}
+
+.skill-name {
+    font-size: 14px;
+    font-weight: 400;
+    color: #120303;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 2px;
+
+}
+
+.skill-bar {
+    height: 14px;
+    margin-top: 0px;
+    background-color: rgb(20, 126, 220, 0.2);
+    border-radius: 3px;
+}
+
+.skill-per {
+    height: 14px;
+    background-color: #0773d9;
+    color: white;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 2px 3px;
+    background: #09a4ec;
+    border-radius: 4px;
+    font-size: 10px;
+    top: -28px;
+    right: 0;
+    z-index: 1;
+    transform: translateX(50%);
+}
+
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    background: #09a4ec;
+    top: -20px;
+    right: -2px;
+    z-index: -1;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+/* ...........................info details.................... */
+.dgetit {
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.permanentaddress {
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.icon {
+    padding: 10px;
+}
+
+.adrress_icon,
+.name_icon {
+    width: 20px;
+}
+
+/*........................... footer section ...................*/
+.footer {
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(235, 240, 240);
+    padding: 20px;
+}
+
+.footerheading_text {
+    text-align: center;
+    font-weight: bold;
+}
+
+.git {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.sc {
+    margin-right: 20px;
+    margin-top: 15px;
+
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0px 5px;
+
+
+}
+
+
+/* .....................message items............. */
+
+
+
+
+.msm {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text] {
+    padding: 8px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 1px solid lightgray
+}
+
+textarea[type=text] {
+    padding: 8px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+textarea[type=text]:focus {
+    border: 1px solid lightgray
+}
+
+
+.emailsubject,
+.emaildescribe {
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid 1px lightgrey;
+}
+
+.emailsubject:hover {
+    border-color: #0773d9;
+}
+
+.clientemail:hover {
+    border-color: #0773d9;
+}
+
+.clientname:hover {
+    border-color: #0773d9;
+}
+
+.emaildescribe:hover {
+    border-color: #0773d9;
+
+}
+
+.clientname,
+.clientemail {
+    width: 45%;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.massagesubmit {
+    margin-left: 400px;
+}

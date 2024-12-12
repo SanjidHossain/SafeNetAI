@@ -1,6 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(252, 252, 252);
+    background-image: url('images/pexels-rostislav-5011647.jpg');
 }
 
 .occ,
@@ -267,7 +268,7 @@ body {
     font-weight: 650;
     margin-top: 5px;
     margin-bottom: 3px;
-   
+
 }
 
 .result {

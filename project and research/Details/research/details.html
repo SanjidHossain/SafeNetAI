@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Loading...</h1>
+        <img id="image" src="" alt="Project Image" style="width: 100%; border-radius: 10px;">
+        <p id="description">Loading details...</p>
+    </div>
+
+    <script>
+        // Simulated data (replace with real API or JSON file)
+        const data = {
+            1: {
+                title: "Project Title 1",
+                image: "/project and research/images/icccaec24.jpg",
+                description: "Cyberbullying."
+            },
+            2: {
+                title: "Project Title 2",
+                image: "/project and research/images/banniere-ipta23-250.png",
+                description: "This is the full description of Project 2. It contains in-depth information and details."
+            },
+            3: {
+                title: "Project Title 3",
+                image: "img/project3.jpg",
+                description: "This is the full description of Project 3. All the specifics and related information are included here."
+            }
+        };
+
+        // Get the query parameter (e.g., ?id=1)
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+
+        // Populate the page with data based on the ID
+        if (data[id]) {
+            document.getElementById('title').textContent = data[id].title;
+            document.getElementById('image').src = data[id].image;
+            document.getElementById('description').textContent = data[id].description;
+        } else {
+            document.getElementById('title').textContent = "Project Not Found";
+            document.getElementById('description').textContent = "The project you are looking for does not exist.";
+        }
+    </script>
+</body>
+</html>

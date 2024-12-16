@@ -127,3 +127,87 @@ section .section-title {
     height: 120px;
     border-radius: 50%;
 }
+
+/* co founder section */
+.backgorund_cofounder{
+    background-color:  #f8f9fa;
+}
+
+.co_card {
+    margin: 20px 0;
+    width: 28rem;
+  }
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  .co_card:hover {
+transform: translateY(-10px);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+border-radius: 15px;
+}
+  .card-spacing {
+margin-bottom: 30px;
+margin-left: 80px;
+}
+
+
+/* co founder section */
+
+/* Supervisor */
+#supervisors-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.supervisors-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #29ddb6;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.supervisor-card {
+    border-radius: 10px;
+    border: 2px solid #ddf5ef;
+    transition: transform 0.3s ease-in-out;
+}
+
+.supervisor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.supervisor-card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.supervisor-name {
+    margin-top: 20px;
+}
+
+.supervisor-social-icons a {
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.supervisor-social-icons a:hover {
+    color: #c2e4dc;
+}
+
+@media (max-width: 768px) {
+    .supervisor-card-body img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .supervisor-social-icons a {
+        margin-right: 5px;
+    }
+}

@@ -34,25 +34,35 @@
         <h1 id="title">Loading...</h1>
         <img id="image" src="" alt="Project Image" style="width: 100%; border-radius: 10px;">
         <p id="description">Loading details...</p>
+        <a id="link" href="#" class="btn btn-primary">Link to Paper</a>
     </div>
 
     <script>
         // Simulated data (replace with real API or JSON file)
         const data = {
             1: {
-                title: "Project Title 1",
+                title: "Refining Bengali Hate Speech Detection: Multi-Label Classification Using RNN and LSTM",
                 image: "/project and research/images/icccaec24.jpg",
-                description: "Cyberbullying."
+                description: "The Internet and social media have made significant progress and are now accessible to a wide audience. With this rapid growth there has also been a corresponding increase in negativity to a certain degree. The main goal is to eliminate the issue of Cyberbullying, which often occurs via the use of Offensive language. Although several options exist, many of them are currently under development. Nevertheless, the issue is always changing, particularly for low-resource languages like Bengali. It is crucial to discover more advanced and enhanced solutions since there are always constraints with present methods and opportunities for further enhancement. This work presents a novel approach to detecting foul language by using a combination of two models in a multi-step solution. Applying two distinct classifiers enables a more detailed method for identifying offensive language. Between the two models, one may ascertain the character of the statement by categorising it as either offensive or non-offensive. The second approach employs multi-label classification to categorise objectionable words into four distinct categories: “Sexual”, “Dishonour”, “Incursive”, and “Neutral” hence advancing the classification process. Several models were used in the process, while Recurrent Neural Networks (RNN) exhibited superior outcomes and were used for both models. The accuracy for both the offensive and non-offensive models was 87.37%. In terms of Multi-label classification, the accuracy achieved was 67%. Although the performance of the multi-label classification model was comparitivly low, however the combination of these two models demonstrates remarkable performance in terms detecting Offensive Bengali language.",
+                link: ""
             },
             2: {
-                title: "Project Title 2",
+                title: "Road Condition Detection and Crowdsourced Data Collection for Accident Prevention: A Deep Learning Approach ",
                 image: "/project and research/images/banniere-ipta23-250.png",
-                description: "This is the full description of Project 2. It contains in-depth information and details."
+                description: " Bangladesh is one of the countries struggling to prevent road accidents, which is a global cause for concern. An early warning system that indicates road conditions can contribute to the prevention task. For this purpose, a deep-learning based approach using a Convolutional Neural Network (CNN) to learn from random road images the safety factor is developed. This results in a three-class categorization: (i) **Severely risky roads**, (ii) **Mildly risky roads**, and (iii) **Normal roads**. The application of deep learning techniques in this study yields an accuracy of **95.5%** in detecting problematic road conditions. Furthermore, based on the study’s findings, a mobile application has been developed. The app enables real-time crowdsourced data collection of road conditions and provides a platform for users to share this information in real-time with other drivers, thereby, contributing to prevent accidents and raise awareness among drivers and users by pinpointing the location of the risky road. Finally, crowdsourced data has been reused to update the trained model, which further improves the classifier accuracy.",
+                link: "https://ieeexplore.ieee.org/abstract/document/10320029"
             },
             3: {
-                title: "Project Title 3",
-                image: "img/project3.jpg",
-                description: "This is the full description of Project 3. All the specifics and related information are included here."
+                title: "Hate Speech Detection Using Machine Learning In Bengali Languages",
+                image: "/project and research/images/27685330.jpg",
+                description: "Hate speech is a common problem in the current time of social media and the internet as it is very easy to be in touch with everything through the internet and social media. Hate speech detection research is not very rare but in terms of Bengali language there are very few works related to hate speech in Bengali language. The proposed research experiment has developed a machine learning based project to detect hate speech from Bengali language data or comments, posts in social media that are in Bengali language. This research work has used 3006 pure Bengali data from social media pages (such as Facebook, YouTube) groups, comment sections of news portals. Further, this research work has categorized them in 0 for non-Hate-Speech and 1 for Hate-Speech to classify the data between non-abusive and abusive data. This research work has used several algorithms to find the best possible result in order to determine whether the sentence is abusive or non-abusive such as Logistic Regression, Naive Bayes, Random Forest, Support Vector Machine, K Nearest Neighbor Classifier. From these algorithms, the best result for detecting non-abusive data is the Random Forest [RF] algorithm, which is 67%.",
+                link: "https://ieeexplore.ieee.org/abstract/document/9788344"
+            },
+            4: {
+                title: "Offensive language identification using Hindi-English code-mixed tweets, and code-mixed data augmentation",
+                image: "/project and research/images/HASOC_Design_01.png",
+                description: "The Code-mixed text classification is challenging due to the lack of code-mixed labeled datasets and the non-existence of pre-trained models. This paper presents the HASOC-2021 offensive language identification results and main findings on code-mixed (Hindi-English) Subtask2. In this work, we have proposed a new method of code-mixed data augmentation using synonym replacement of Hindi and English words using WordNet, and phonetics conversion of Hinglish (Hindi-English) words. We used a 5.7k pre-annotated HASOC-2021 code-mixed dataset for training and data augmentation. The proposal’s feasibility was tested with a Logistic Regression (LR) used as a baseline, Convolutional Neural Network (CNN), and BERT with and without data augmentation. The research outcomes were promising and yields almost 3% increase of classifier accuracy and F1 scores as compared to baseline. Our official submission showed a 66.56% F1 score and ranked 8th position in the competition.",
+                link: "https://oulurepo.oulu.fi/handle/10024/33451"
             }
         };
 
@@ -65,6 +75,15 @@
             document.getElementById('title').textContent = data[id].title;
             document.getElementById('image').src = data[id].image;
             document.getElementById('description').textContent = data[id].description;
+
+            // Check if the link exists
+            if (data[id].link) {
+                document.getElementById('link').href = data[id].link;
+                document.getElementById('link').textContent = "Follow the link";
+            } else {
+                document.getElementById('link').href = "#";
+                document.getElementById('link').textContent = "Will be published soon";
+            }
         } else {
             document.getElementById('title').textContent = "Project Not Found";
             document.getElementById('description').textContent = "The project you are looking for does not exist.";

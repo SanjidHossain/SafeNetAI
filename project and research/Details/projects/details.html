@@ -34,25 +34,126 @@
         <h1 id="title">Loading...</h1>
         <img id="image" src="" alt="Project Image" style="width: 100%; border-radius: 10px;">
         <p id="description">Loading details...</p>
+        <a id="linkButton" href="#" style="display: inline-block; margin-top: 10px; padding: 10px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">Loading Link...</a>
+
+        <h2>Dataset</h2>
+        <p id="dataset">Loading dataset...</p>
+
+        <h2>Preprocessing</h2>
+        <ul id="preprocessing"></ul>
+
+        <h2>Models Used</h2>
+        <ul id="modelsUsed">Loading models...</ul>
+
+        <h2>Evaluation Metrics</h2>
+        <ul id="evaluationMetrics">Loading metrics...</ul>
+
+        <h2>Results</h2>
+        <ul id="results"></ul>
     </div>
 
     <script>
         // Simulated data (replace with real API or JSON file)
         const data = {
             1: {
-                title: "Project Title 1",
+                title: "Heart Disease Prediction using Machine Learning",
                 image: "/project and research/Details/projects/heart_disease.png",
-                description: "Heart Description."
+                description: "This project aims to predict the presence of heart disease in patients using various machine learning algorithms. The dataset used for this project is sourced from the UCI Machine Learning Repository.",
+                link: "https://github.com/Mominul-Islam-cmd/Machine-Learning/blob/main/Heart_Disease_Prediction_using_Machine_Learning_.ipynb",
+                dataset: "The dataset contains 14 features, including age, sex, chest pain type, resting blood pressure, serum cholesterol, fasting blood sugar, resting electrocardiographic results, maximum heart rate achieved, exercise-induced angina, ST depression induced by exercise relative to rest, the slope of the peak exercise ST segment, number of major vessels colored by fluoroscopy, and thalassemia.",
+                preprocessing: ["Data Cleaning: Handle missing values and outliers.","Feature Encoding: Convert categorical variables into numerical values using techniques like one-hot encoding.","Feature Scaling: Standardize the features to have a mean of 0 and a standard deviation of 1."],
+                models: ["Logistic Regression", "Random Forest", "SVM","K-Nearest Neighbors (KNN)","Gradient Boosting"],
+                evaluationMetrics: ["Accuracy", "Precision", "Recall","F1 Score"],
+                results: "The performance of each model is evaluated using the above metrics. The model with the highest F1 Score is selected as the best model for this task.."
             },
             2: {
-                title: "Project Title 2",
-                image: "img/project2.jpg",
-                description: "This is the full description of Project 2. It contains in-depth information and details."
+                title: "Sonar Rock and Mine Prediction",
+                image: "/project and research/Details/projects/dataset-cover.jpg",
+                description: "This project aims to classify sonar signals as either rocks or mines using various machine learning algorithms. The dataset used for this project is sourced from the UCI Machine Learning Repository.",
+                link: "https://github.com/Mominul-Islam-cmd/Machine-Learning/blob/main/sonar%20rock%20and%20mine%20prediction.ipynb",
+                dataset: "The dataset contains 60 features, each representing the energy of a sonar signal at different frequencies. The target variable indicates whether the object is a rock or a mine",
+                preprocessing: ["Data Cleaning: Handle missing values and outliers.","Feature Encoding: Convert categorical variables into numerical values if necessary.","Feature Scaling: Standardize the features to have a mean of 0 and a standard deviation of 1."],
+                models: ["Logistic Regression", "Random Forest", "SVM","K-Nearest Neighbors (KNN)","Gradient Boosting"],
+                evaluationMetrics: ["Accuracy", "Precision", "Recall","F1 Score"],
+                results: "The performance of each model is evaluated using the above metrics. The model with the highest F1 Score is selected as the best model for this task."
             },
             3: {
-                title: "Project Title 3",
-                image: "img/project3.jpg",
-                description: "This is the full description of Project 3. All the specifics and related information are included here."
+                title: "RAG Document LangChain Gemini",
+                image: "/project and research/Details/projects/Rag.jpg",
+                description: "This project aims to demonstrate the use of Retrieval-Augmented Generation (RAG) with LangChain and Gemini for document processing and question answering. The goal is to enhance the capabilities of language models by integrating them with external knowledge sources.",
+                link: "https://github.com/Mominul-Islam-cmd/RAG_DOCUMENT_LANGCHAIN_GEMINI",
+                dataset: "The dataset used in this project includes various documents that are processed and indexed for efficient retrieval. These documents can be in different formats such as PDFs, text files, and more.",
+                preprocessing: ["Data Cleaning: Handle missing values and remove irrelevant information.","Text Extraction: Extract text from different document formats.","Tokenization: Split the text into tokens for further processing.","Indexing: Create an index of the documents for efficient retrieval."],
+                models: ["LangChain: A framework for building applications with language models.","Gemini: A model used for enhancing the retrieval capabilities.","RAG: Retrieval-Augmented Generation model that combines retrieval and generation for better performance."],
+                evaluationMetrics: ["Accuracy", "Precision", "Recall","F1 Score"],
+                results: "The performance of the models is evaluated using the above metrics. The results indicate that the combination of LangChain and Gemini with RAG provides improved accuracy and relevance in document processing and question answering tasks."
+            },
+            4: {
+                title: "Road Condition Detection and Crowdsourced Data Collection for Accident Prevention",
+                image: "/project and research/Details/projects/AI-Based-Pothole-Detection-1536x864.jpg",
+                description: "This project aims to classify road conditions accurately and in real-time using deep learning techniques. By leveraging Convolutional Neural Networks (CNN), the system processes images of roads and categorizes them into three distinct classes: Severely Risky, Mildly Risky, and Normal. The project also includes a mobile application for real-time crowdsourced data collection and community sharing",
+                link: "https://github.com/Mominul-Islam-cmd/Road-Condition-Detection-and-Crowdsourced-Data-Collection-for-Accident-Prevention",
+                dataset: "The dataset used for training and evaluating the model comprises a variety of road images labeled into the three categories mentioned above. The data collection process is facilitated through the mobile application, ensuring diverse and up-to-date inputs.",
+                preprocessing: ["Data Cleaning: Handle missing values and outliers.","Image Preprocessing: Resize and normalize images to ensure consistency.","Data Augmentation: Apply techniques like rotation, flipping, and zooming to increase the diversity of the training data"],
+                models: ["Convolutional Neural Networks (CNN): A deep learning architecture well-suited for image classification tasks.","Transfer Learning: Utilize pre-trained models to improve classification accuracy."],
+                evaluationMetrics: ["Accuracy", "Precision", "Recall","F1 Score"],
+                results: "The model achieved an accuracy of 95.5% in detecting problematic road conditions. The performance of the model is evaluated using the above metrics, and the results indicate that the CNN model provides high accuracy and reliability in classifying road conditions."
+            },
+            5: {
+                title: "Diabetes Prediction Using KNN and Deployment with Django",
+                image: "/project and research/Details/projects/diabetes.png",
+                description: "This project aims to predict whether a patient has diabetes using the K-Nearest Neighbors (KNN) machine learning algorithm. The model is trained on data sourced from Kaggle and deployed using Django, rendered via a web platform",
+                link: "https://github.com/Mominul-Islam-cmd/diabetes_django",
+                dataset: "The dataset used for this project is sourced from Kaggle and contains various medical predictor variables and one target variable indicating the presence of diabetes",
+                preprocessing: ["Data Cleaning: Handle missing values appropriately in the dataset.","Feature Encoding: Convert categorical features to numerical values using one-hot encoding.","Feature Scaling: Standardize the features to a standard range using StandardScaler from the sklearn library."],
+                models: ["K-Nearest Neighbors (KNN): A simple, non-parametric algorithm used for classification"],
+                evaluationMetrics: ["Accuracy", "Precision", "Recall","F1 Score"],
+                results: "The KNN model achieved an accuracy of 96% in predicting diabetes. The detailed classification report included in the notebook shows high performance for class 0 and relatively lower performance for class 1."
+            },
+            6: {
+                title: "AI Schema Extractor",
+                image: "/project and research/Details/projects/AI schema detction.png",
+                description: "This project is a web data extractor that uses the Anthropic API to extract specified schemas from a given website. The application is built with Python and Streamlit, providing an easy-to-use web interface for users to extract data from websites.",
+                link: "https://github.com/SanjidHossain/AI-schema-extractor",
+                dataset: "The dataset consists of various schemas extracted from different websites. These schemas are specified by the user and extracted using the Anthropic API.",
+                preprocessing: ["Data Cleaning: Handle missing values and remove irrelevant information.","Schema Specification: Define the schemas to be extracted from the websites.","API Integration: Integrate the Anthropic API for schema extraction."],
+                models: ["Anthropic API: Used for extracting specified schemas from websites.","Streamlit: Provides a web interface for users to input website URLs and schemas."],
+                evaluationMetrics: ["Accuracy", "Precision", "Recall","F1 Score"],
+                results: "The performance of the schema extraction process is evaluated using the above metrics. The results indicate that the integration of the Anthropic API with Streamlit provides accurate and efficient schema extraction."
+            },
+            7: {
+                title: "FoodLens.ai",
+                image: "/project and research/Details/projects/FOODLENS.ai (1).png",
+                description: "FoodLens.aiis a web application designed to recognize and classify foods, their origins, and restrictive ingredients from both text and images. The application leverages machine learning models to classify 239 different foods, detect their origins, and identify restrictive ingredients such as allergens, dairy, and meat.",
+                link: "https://github.com/SanjidHossain/FoodLens.ai",
+                dataset: "The dataset for this project is comprehensive and diverse, sourced from multiple platforms to ensure a wide variety of food types and images. It includes 5780 food recipes from the AllRecipes website, encompassing food names, descriptions, and detailed recipes. Additionally, the FOOD 101 dataset from Kaggle provides 101 popular foods with 1000 images per food, while the Indian Food Images dataset from Kaggle offers 80 popular Indian foods with 50 images per food. To further enhance the dataset, 58 popular dishes were scraped from DuckDuckGo, resulting in 170 images per food. This extensive dataset supports robust training and evaluation of the machine learning models used in the project.",
+                preprocessing: ["Text Data Cleaning: Removed irrelevant information and handled missing values.","Text Restrictive Ingredient List: Created based on common ingredients and categorized into 11 restrictive groups (e.g., Non-vegan, dairy, Non-Vegetarian).","Text Keyword Detection: Used NLTK tools for detecting common keywords and ingredients.","Image Data Cleaning: Manually checked and cleaned scraped images.","Image Data Augmentation: Applied techniques like rotation, flipping, and zooming to balance the dataset."],
+                models: ["Restrictive Ingredient Detection:DistilRoBERTa-base Fine-tuned using Fastai and Blurr(NLP Model)","Food Origin Detection: DistilRoBERTa-base Fine-tuned using Fastai and Blurr(NLP Model)","Food Detection: ResNet-50 Fine-tuned using Fastai and Blurr(Image Classification Model)"],
+                evaluationMetrics: ["Accuracy", "Precision", "Recall","F1 Score"],
+                results: "Restrictive Ingredient Detection: Accuracy: 98.28%,F1 Score (Micro): 96.50% ,F1 Score (Macro): 94%,   Food Origin Detection:Accuracy: 98.3%,F1 Score (Micro): 72%,F1 Score (Macro): 69%,    Food Detection:Accuracy: 91.62% ,Error Rate: 8.38"
+            }
+            ,
+            8: {
+                title: "Multilabel Article Classifier",
+                image: "/project and research/Details/projects/articleClassification.png",
+                description: "This project is a text classification model designed to classify news articles into multiple categories. The model can classify 22 different types of news articles, making it a versatile tool for organizing and categorizing large volumes of news content.",
+                link: "https://github.com/SanjidHossain/Multilabel-Article-Classifier",
+                dataset: "The dataset used for this project was collected from the Dhaka Tribune website, comprising 31,125 news articles. The data collection process involved two main steps: first, news URLs were scraped and stored along with their titles. Second, using these URLs, the news articles and their respective categories were scraped and stored in a comprehensive dataset.",
+                preprocessing: ["Data Cleaning: Removed irrelevant information such as URLs and handled missing values.","Category Merging: Merged 18 different sub-categories and 4 main categories into multiple-label categories.","Final Dataset: The final dataset size was 31,125 articles after cleaning."],
+                models: ["DistilRoBERTa-base: A model from HuggingFace Transformers, fine-tuned using Fastai and Blurr for text classification."],
+                evaluationMetrics: ["Accuracy", "Precision", "Recall","F1 Score"],
+                results: "The model achieved high accuracy and reliability in classifying news articles into multiple categories. The use of DistilRoBERTa-base, fine-tuned with Fastai and Blurr, provided robust performance in the classification task."
+            },
+            9: {
+                title: "Data Analysis on Quality of Life",
+                image: "/project and research/Details/projects/Regional_graph.png",
+                description: "This project aims to analyze the quality of life across different regions worldwide by gathering data on population, GDP, inflation, and life expectancy. The analysis provides insights into the factors affecting the quality of life in various regions, including Asia, Africa, and the Americas.",
+                link: "https://github.com/SanjidHossain/Data-analysis-on-Quality-of-life",
+                dataset: "The dataset for this project includes population data sourced from various websites, GDP data collected from multiple sources such as the IMF, World Bank, and CIA, life expectancy data gathered from relevant websites, and inflation rate data sourced from various websites. This comprehensive dataset provides a robust foundation for analyzing the quality of life across different regions.",
+                preprocessing: ["Data Cleaning: Handle missing values and remove irrelevant information.","Data Merging: Combine data from different sources into a single dataset.","Data Transformation: Standardize and normalize the data for analysis."],
+                models: ["Data Visualization: Various graphs and charts are used to visualize the data, including bar charts, line charts, and comparison charts."],
+                evaluationMetrics:["Population Analysis: Comparison of population across different regions and countries.","GDP Analysis: Comparison of GDP from different sources and regions.","Inflation Rate Analysis: Comparison of inflation rates across different regions and countries.","Life Expectancy Analysis: Comparison of life expectancy across different regions and countries."] ,
+                results: "Asia has the highest population, with over 4 billion people.  The Americas have the largest landmass but a lower population density compared to Asia.  Asia has the highest GDP among all regions, followed by the Americas and Europe.  The Americas have the highest inflation rate, with Venezuela experiencing the most significant inflation.  Africa has the lowest life expectancy, while Europe has the highest."
             }
         };
 
@@ -65,6 +166,50 @@
             document.getElementById('title').textContent = data[id].title;
             document.getElementById('image').src = data[id].image;
             document.getElementById('description').textContent = data[id].description;
+            const linkButton = document.getElementById('linkButton');
+            if (data[id].link) {
+                linkButton.href = data[id].link;
+                linkButton.textContent = "View Project";
+            } else {
+                linkButton.textContent = "Link Not Available";
+                linkButton.href = "#"; // or you can set it to `javascript:void(0);` to disable the link
+            }
+            document.getElementById('dataset').textContent = data[id].dataset;
+            document.getElementById('preprocessing').textContent = "";
+            if (data[id].preprocessing) {
+                data[id].preprocessing.forEach(step => {
+                    const li = document.createElement('li');
+                    li.textContent = step;
+                    document.getElementById('preprocessing').appendChild(li);
+                });
+            }
+            const modelsList = document.getElementById('modelsUsed');
+            modelsList.textContent = "";
+            if (data[id].models) {
+                data[id].models.forEach(model => {
+                    const li = document.createElement('li');
+                    li.textContent = model;
+                    modelsList.appendChild(li);
+                });
+            }
+            const metricsList = document.getElementById('evaluationMetrics');
+            metricsList.textContent = "";
+            if (data[id].evaluationMetrics) {
+                data[id].evaluationMetrics.forEach(metric => {
+                    const li = document.createElement('li');
+                    li.textContent = metric;
+                    metricsList.appendChild(li);
+                });
+            }
+            document.getElementById('results').textContent = "";
+            if (data[id].results) {
+                const resultsList = data[id].results.split(', ');
+                resultsList.forEach(result => {
+                    const li = document.createElement('li');
+                    li.textContent = result;
+                    document.getElementById('results').appendChild(li);
+                });
+            }
         } else {
             document.getElementById('title').textContent = "Project Not Found";
             document.getElementById('description').textContent = "The project you are looking for does not exist.";
